@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Todo app</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main--wrapper">
+      <div class="header">
+        <div class="header--left">
+          <h1 class="header--title">Todo List</h1>
+        </div>
+
+        <ul class="header--right nav">
+          <li class="nav--li">
+            <button class="nav--button nav-button--all nav-button--current">
+              All
+            </button>
+          </li>
+          <li class="nav--li">
+            <button class="nav--button nav-button--active">Active</button>
+          </li>
+          <li class="nav--li">
+            <button class="nav--button nav-button--completed">
+              Completed
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <form class="list--form">
+        <input type="text" placeholder="What needs to be done?" />
+        <button type="submit" class="button button--add">+</button>
+      </form>
+
+      <ul class="list list--all"></ul>
+
+      <footer class="footer">
+        <div class="footer--left"><p class="items-left"></p></div>
+        <div class="footer--right">
+          <button class="nav--button clearall">Clear completed</button>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

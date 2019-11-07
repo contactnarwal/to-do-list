@@ -1,0 +1,170 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Segoe UI";
+  background: #fff;
+}
+
+.main--wrapper {
+  background: #fff;
+  max-width: 700px;
+  padding: 28px 48px;
+  margin: 80px auto 0;
+  box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.header--title {
+  color: #3c3b62;
+  font-weight: 600;
+}
+
+.header--left {
+  flex-grow: 1;
+}
+.nav {
+  list-style: none;
+  margin: 0;
+
+  display: flex;
+}
+
+.nav--li {
+  margin-left: 10px;
+}
+
+.nav--button {
+  color: #777;
+  border: 2px solid transparent;
+  background: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.nav--button:hover,
+.nav--button--current {
+  border-color: #c7c8ea;
+}
+
+.button {
+  background: transparent;
+  border-radius: 100%;
+  border: 0;
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.button--add {
+  background: #2c299e;
+  color: #fff;
+}
+
+.button--check {
+  font-size: 20px;
+  padding-top: 2px;
+  line-height: 30px;
+  float: left;
+  transform: scale(0.75);
+  box-shadow: inset 0 0 0 2px #ccc;
+  color: #fff;
+}
+
+.button--delete {
+  color: red;
+  float: right;
+}
+
+.list--form {
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.list--form input {
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  outline: none;
+}
+.list--form input:focus {
+  border-color: #aaa;
+}
+.list--form input::placeholder {
+  font-style: italic;
+}
+
+.list--form button {
+  position: absolute;
+  float: right;
+
+  right: 0;
+}
+
+.list {
+  list-style: none;
+
+  padding: 0;
+  margin-bottom: 70px;
+}
+
+.list--active .list__item--complete {
+  display: none;
+}
+.list--completed li:not(.list__item--complete) {
+  display: none;
+}
+
+.list__item {
+  border-bottom: 1px solid #c7c1c1;
+  padding: 7px 0;
+}
+
+.list__text {
+  color: #555;
+  margin: 5px 45px 6px;
+}
+
+.list__item--complete .list__button-check {
+  background: #82d058;
+  box-shadow: none;
+}
+.footer {
+  position: relative;
+}
+.footer--right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.clear-completed {
+}
